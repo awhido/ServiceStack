@@ -58,9 +58,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ServiceStack.Text">
-      <HintPath>..\..\lib\ServiceStack.Text.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -117,6 +114,10 @@
     <Compile Include="ViewPage.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\ServiceStack.Text\src\ServiceStack.Text\ServiceStack.Text.csproj">
+      <Project>{579B3FDB-CDAD-44E1-8417-885C38E49A0E}</Project>
+      <Name>ServiceStack.Text</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ServiceStack.Common\ServiceStack.Common.csproj">
       <Project>{982416DB-C143-4028-A0C3-CF41892D18D3}</Project>
       <Name>ServiceStack.Common</Name>

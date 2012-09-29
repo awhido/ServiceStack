@@ -48,6 +48,7 @@ namespace ServiceStack.Razor.Templating
 				layoutTemplate.ChildTemplate = razorTemplate;
 				SetService(layoutTemplate, this);
 				SetModel(layoutTemplate, model);
+                layoutTemplate.Init(viewEngine, new ViewDataDictionary<T>(model), httpReq, httpRes);
 				layoutTemplate.Execute();
 
 				return layoutTemplate;
